@@ -1,0 +1,27 @@
+{
+  "name": "idan-agent-wallet",
+  "version": "1.0.0",
+  "description": "IDAN — Unexplainable Power on the Chain. Autonomous AI agent wallet for Solana devnet.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "demo": "node src/demo.js",
+    "test": "node tests/run_tests.js",
+    "dashboard": "node dashboard/server.js",
+    "airdrop": "node scripts/airdrop.js",
+    "multi-agent": "node src/multi_agent_demo.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.3",
+    "@solana/spl-token": "^0.4.9",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "tweetnacl": "^1.0.3",
+    "winston": "^3.13.0",
+    "uuid": "^10.0.0",
+    "express": "^4.21.0",
+    "cors": "^2.8.5"
+  },
+  "keywords": ["solana", "ai-agent", "wallet", "defi", "autonomous", "devnet", "idan"],
+  "license": "MIT"
+}
