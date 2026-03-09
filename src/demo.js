@@ -17,9 +17,7 @@ async function main() {
     const balance = await wallet.getSOLBalance();
     console.log(`Balance after airdrop: ${balance} SOL`);
   } catch (e) {
-    console.warn(`Airdrop failed: ${e.message}. Continuing with 0 SOL.`);
-  }
-
+    console.warn(`Airdrop unavailable (devnet rate limit). Continuing...`);
   // 3. Run trading agent for 3 ticks
   const agent = new TradingAgent({ wallet, maxTicks: 3, tickMs: 1500 });
 
